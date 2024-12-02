@@ -62,7 +62,7 @@ public WebDriverWait wait;
 	}
 	
 	
-	@AfterClass(groups= {"Regressio,","Sanity","Master"})
+	@AfterClass(groups= {"Regression,","Sanity","Master"})
 	public void tearDown()
 	{
 		
@@ -85,6 +85,5 @@ public WebDriverWait wait;
 		
 	}
 	
-	
-	
+		
 }

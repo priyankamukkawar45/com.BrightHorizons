@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,10 +21,8 @@ public class searchResultPage extends BasePage{
 	WebElement searchConfirmationMessage;
 	
 	
-	//@FindBy(xpath = "//div[@class='results container']/a[@class='search-result'][1]")
-	
-	@FindBy(xpath ="//*[@id='mainContent']/section[2]/div[2]/a[1]/div/h3")
-	WebElement firstSearchText;
+	@FindBy(xpath ="//h3[@class='title']")
+	List<WebElement> searchResults;
 
 	
 
@@ -43,8 +43,8 @@ public class searchResultPage extends BasePage{
 
 	public String getFirstResult()
 	{
-		String firstSearchResult = firstSearchText.getText();
-		return firstSearchResult;
+		return searchResults.get(0).getText(); //get first result from the list
+		
 	}
 	
 	

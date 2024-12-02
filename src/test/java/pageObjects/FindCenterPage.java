@@ -7,6 +7,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FindCenterPage extends BasePage
 {
@@ -16,20 +18,31 @@ public class FindCenterPage extends BasePage
 		super(driver);
 	}
 	
-	@FindBy(xpath="//*[@id='addressInput']")
+	@FindBy(xpath="//input[@id='addressInput']")
 	WebElement findCenterSearchBox;
 	
-	@FindBy(xpath = "//*[@id='centerLocator_list']/div[2]/span")
-	WebElement noOfCenters;
+	@FindBy(xpath = "//span[@class='resultsNumber']")
+	WebElement noOfCentersText;
 	
 	@FindBy(xpath="//div[@class='center-results-container']/div")
-	List<WebElement> listOfCenters;
+	List<WebElement> centerResultList;
 	
-	@FindBy(xpath = "//div[@class='center-results-container']/div[2]/div/div/span[@class='centerResult__address']")
-	WebElement adressFromList;
+	@FindBy(xpath="//*[@class='centerResult infoWindow track_center_select covidOpen']")
+	List<WebElement> centerResultTable;
 	
-	@FindBy(xpath = "//*[@id=' 1489 ']/div[1]/div[1]")
-	WebElement adressFromPopup;
+	@FindBy(xpath="//h3[@class='centerResult__name']")
+	WebElement centerNameFromList;
+	
+	@FindBy(xpath = "//span[@class='centerResult__address']")
+	WebElement centerAddressFromList;
+	
+	@FindBy(xpath = "//*[@id='1489']/span[1]")
+	WebElement centerNameFromPopUp;
+	
+	@FindBy(xpath = "//*[@id='1489']/div[1]/div[1]")
+	WebElement centerAddressFromPopUp;
+
+		
 	
 	public String currentUrl = driver.getCurrentUrl();
 	
@@ -44,49 +57,62 @@ public class FindCenterPage extends BasePage
 	public void findCenter(String centerName) 
 	{
 		findCenterSearchBox.sendKeys(centerName);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6000));
 		findCenterSearchBox.sendKeys(Keys.ENTER);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6000));
 	}
 	
-	public String getNoOfCentersCountFromText()
+	public int getNoOfCentersCountFromText()
 	{
-		/*String numMesg = noOfCentersMessage.getText();
-		System.out.println("numof center"+ numMesg);
-		return numMesg;
-		//numMesg.split(" ");*/
-		
-		return noOfCenters.getText();
+			
+		return Integer.parseInt(noOfCentersText.getText());
+		 
 		
 	}
 	
 	public int getNoOfCentersFromResultList()
 	{
-		return(listOfCenters.size()-1);
-	}
-	
-	public WebElement getFirstResultFromListOfCenters()
-	{
+		int centerNum = centerResultList.size();
+		System.out.println(centerNum-1);
+		return(centerNum-1);
 		
-		return listOfCenters.get(1);
-			
 	}
+		
 	
-	
-	public void getCenterPopOnMap()
+	public void getFirstResultFromListOfCenters()
 	{
-		listOfCenters.get(1).click();
+		centerResultTable.get(0).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	
+
 	public String getCenterAdressFromList()
 	{
-		return ( adressFromList.getText());
+		System.out.println(centerAddressFromList.getText().trim());
+		return centerAddressFromList.getText().trim();
 	}
 	
-	public String getAddressFromPopUp()
+	
+	public String getCenterAddressFromPopUp()
 	{
-		return (adressFromPopup.getText());
+		return centerAddressFromPopUp.getText().replace("\n"," ").trim();
 	}
+	
+	
+	public String getCenterNameFromList()
+	{
+		System.out.println(centerNameFromList.getText().trim());
+		return centerNameFromList.getText().trim();
+	}
+	
+	public String getCenterNameFromPopUp()
+	{
+		System.out.println(centerNameFromPopUp.getText().trim());
+		return centerNameFromPopUp.getText().trim();
+	
+	}
+	
+	
 	
 }

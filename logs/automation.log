@@ -11,3 +11,150 @@
 08:13:41:923 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
 08:13:41:959 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
 08:13:41:986 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+13:41:51:760 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:41:55:887 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+13:41:55:938 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+13:42:00:039 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+13:42:00:074 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+13:42:00:096 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+13:51:23:038 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:51:27:147 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+13:51:27:196 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+13:51:30:954 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+13:51:30:984 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+13:51:31:007 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+17:14:58:045 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:14:58:049 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:16:44:570 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:16:44:574 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:16:48:421 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:16:48:430 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:37:48:137 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:37:48:142 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:37:51:826 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:37:51:858 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:45:17:914 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:45:17:924 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:45:21:410 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:45:21:424 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:45:21:562 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:46:12:646 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:46:12:651 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:46:15:888 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:46:15:899 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:46:16:050 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:49:07:269 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:49:07:273 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:49:10:974 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:49:10:990 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:49:11:082 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:49:59:936 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:49:59:943 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:50:03:084 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:50:03:099 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:50:03:250 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:50:31:244 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:50:31:252 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:50:34:552 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:50:34:567 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:51:01:691 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:52:15:466 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:52:15:468 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:52:18:703 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:52:18:749 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:52:35:066 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:54:56:028 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:54:56:031 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:54:59:387 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:54:59:416 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:55:07:765 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:57:28:235 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:57:28:241 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:57:31:571 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:57:31:583 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:57:31:848 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+17:57:31:890 [main] ERROR testCases.TC002_verifyNumberOfCenters - num does not match....
+17:57:31:890 [main] DEBUG testCases.TC002_verifyNumberOfCenters - Debug logs...
+17:57:45:900 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+17:57:45:907 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+17:57:49:413 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+17:57:49:445 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+17:57:58:742 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+18:00:39:447 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:00:39:451 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:00:43:048 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:00:43:073 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:00:53:075 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+18:01:05:675 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Click on the first center on the list ********
+18:01:23:992 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify if center name and address are the same on the list and on the popup ********
+18:06:27:504 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:06:27:507 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:06:30:831 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:06:30:872 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:07:11:437 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:07:11:440 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:07:16:992 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:07:17:020 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:08:43:842 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+18:09:20:796 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Click on the first center on the list ********
+18:09:36:812 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify if center name and address are the same on the list and on the popup ********
+18:11:27:191 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:11:27:198 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:11:32:381 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:11:32:406 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:11:44:031 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+18:12:12:862 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:12:12:867 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:12:15:988 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:12:16:045 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:12:29:309 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+18:13:30:874 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Click on the first center on the list ********
+18:13:46:352 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify if center name and address are the same on the list and on the popup ********
+18:43:56:129 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:43:56:131 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:44:00:173 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:44:00:215 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:44:33:226 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+18:44:45:332 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Click on the first center on the list ********
+18:44:57:199 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify if center name and address are the same on the list and on the popup ********
+18:54:28:661 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:54:28:663 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:54:32:671 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:54:32:712 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:55:33:301 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:55:33:304 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:55:36:131 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:55:36:147 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+18:55:45:534 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+18:56:09:675 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Click on the first center on the list ********
+18:56:15:359 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify if center name and address are the same on the list and on the popup ********
+18:59:44:494 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+18:59:44:499 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+18:59:47:793 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+18:59:47:810 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+19:00:19:527 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+19:00:19:530 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+19:00:22:823 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+19:00:22:843 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+19:00:37:018 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+19:00:40:290 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Click on the first center on the list ********
+19:00:44:149 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify if center name and address are the same on the list and on the popup ********
+19:01:32:032 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+19:01:32:041 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+19:01:35:328 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+19:01:35:344 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+19:01:56:992 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+19:02:03:171 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Click on the first center on the list ********
+19:02:08:171 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify if center name and address are the same on the list and on the popup ********
+19:02:45:767 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** completed TC_002_verifyCenter********
+20:30:23:795 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+20:30:27:673 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+20:30:28:036 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+20:30:34:531 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+20:30:34:593 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+20:30:34:632 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+20:30:47:807 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+20:30:47:807 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+20:31:00:005 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+20:31:00:047 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+20:31:00:310 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********

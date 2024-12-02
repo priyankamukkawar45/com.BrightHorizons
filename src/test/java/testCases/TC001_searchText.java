@@ -27,26 +27,28 @@ public class TC001_searchText extends BaseClass
 		try 
 		{
 			HomePage hp = new HomePage(driver);
-			hp.accpetCookie();
-			hp.clickOnSearchLoop();
+			hp.acceptCookie();
+			hp.clickOnSearchIcon();
 			Thread.sleep(3000);
 			
 			logger.info("******** verify if search Text box is displayed on home page ********");
 			Assert.assertEquals(hp.verifySearchField(), true,"Text box is not displayed");
 			
+			
 			logger.info("****** Enter text to search and click on search button ******** ");
 			hp.setSearchText("Employee Education in 2018: Strategies to Watch");
 			hp.clickSearch();
 			
+			
 			logger.info("****** verify you are searchResult page ******** ");
+			
 			searchResultPage sp = new searchResultPage(driver);
-			String cnfmsg = sp.searchConfirmationMessage();
-			Assert.assertEquals(cnfmsg, "YOUR SEARCH RESULTS","Search results does not match");
+			Assert.assertEquals(sp.searchConfirmationMessage(), "YOUR SEARCH RESULTS","Search text on page is matching");
+			
 			
 			logger.info("****** Verify if first search result is exact match of entered text******** ");
-			String firstResult = sp.getFirstResult();
-			
-			if(firstResult.equals("Employee Education in 2018: Strategies to Watch"))
+						
+			if(sp.getFirstResult().equals("Employee Education in 2018: Strategies to Watch"))
 			{
 				Assert.assertTrue(true);
 			}

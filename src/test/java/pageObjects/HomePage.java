@@ -1,8 +1,14 @@
 package pageObjects;
 
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage{
 	
@@ -14,32 +20,34 @@ public class HomePage extends BasePage{
 
 	
 	@FindBy(xpath = "//a[@href='#subnav-search-desktop-top']")
-	WebElement searchLoop;
+	WebElement searchIcon;
 	
-	//@FindBy(xpath ="//input[@class='js-nav-search-field nav-search-input form-control input-text txt-nav-search-input js-input-text'][1]")
-	@FindBy(xpath = "/html/body/nav/div[3]/ul/li[10]/nav/div/div/div/div[3]/form/input")
-	WebElement searchTextField;
-	
+	@FindBy(xpath ="//input[@id='search-field']")
+	List<WebElement> searchTextBox;
 
-	//@FindBy(xpath="//form[@class='js-nav-search-form']/button[1]")
-	@FindBy(xpath = "//*[@id='subnav-search-desktop-top']/div/div/div/div[3]/form/button")
-	WebElement searchButton;
+	@FindBy(xpath = "//button[@type='submit']")
+	List<WebElement> searchButton;
 	
 	@FindBy(xpath = "//*[@id='onetrust-accept-btn-handler']")
 	WebElement cookieAcceptButton;
 	
-	@FindBy(xpath="/html/body/nav/div[3]/ul/li[7]/a")
-	WebElement findCenterButton;
+	@FindBy(xpath="//*[@class='nav-shared txt-nav-hierarchy nav-top js-nav-shared js-nav-top']//a[contains(text(),'Find a Center')]")
+	List <WebElement> findCenterButton;
 	
+	@FindBy(xpath="//*[@class='map-container']")
+	WebElement mapContainer;
 	
-	public void accpetCookie()
+	@FindBy(xpath="//*[@id='mainContent']/section/div[1]/div/form/h4")
+	WebElement findCenterTxt;
+	
+	public void acceptCookie()
 	{
 		cookieAcceptButton.click();
 	}
 	
-	public void clickOnSearchLoop()
+	public void clickOnSearchIcon()
 	{
-		searchLoop.click();
+		searchIcon.click();
 	}
 	
 	
@@ -47,7 +55,7 @@ public class HomePage extends BasePage{
 	{
 		try 
 		{
-			return( searchTextField.isDisplayed());
+			return( searchTextBox.get(1).isDisplayed());
 		}
 		catch(Exception e)
 		{
@@ -59,18 +67,20 @@ public class HomePage extends BasePage{
 	
 	public void setSearchText(String textToSearch)
 	{
-		searchTextField.click();
-		searchTextField.sendKeys(textToSearch);
+		searchTextBox.get(1).sendKeys(textToSearch);
 		
 	}
 	
 	public void clickSearch()
 	{
-		searchButton.click();
+		searchButton.get(1).click();
 	}
 	
 	public void clickFindCenterButton()
 	{
-		findCenterButton.click();
+		findCenterButton.get(1).click();
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30)); 
+		wait.until(ExpectedConditions.visibilityOf(mapContainer));
+		wait.until(ExpectedConditions.visibilityOf(findCenterTxt));
 	}
 }
