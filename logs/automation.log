@@ -1,0 +1,13 @@
+08:11:43:384 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+08:11:47:253 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+08:11:47:301 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+08:12:04:973 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+08:12:05:017 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+08:12:05:040 [main] ERROR testCases.TC001_searchText - Test Failed....
+08:12:05:041 [main] DEBUG testCases.TC001_searchText - Debug logs...
+08:13:20:543 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+08:13:24:449 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+08:13:24:496 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+08:13:41:923 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+08:13:41:959 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+08:13:41:986 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********

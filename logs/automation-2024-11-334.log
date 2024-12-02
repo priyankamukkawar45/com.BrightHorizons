@@ -1,0 +1,89 @@
+13:03:12:360 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:03:16:588 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+13:03:16:620 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+13:03:18:455 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+13:03:18:510 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+13:03:18:578 [main] ERROR testCases.TC001_searchText - Test Failed....
+13:03:18:580 [main] DEBUG testCases.TC001_searchText - Debug logs...
+13:06:46:727 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:06:50:993 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+13:06:51:026 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+13:06:54:748 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+13:06:54:781 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+13:06:54:806 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+13:13:12:096 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:13:16:318 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+13:13:16:360 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+13:13:20:223 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+13:13:20:261 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+13:13:20:291 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+13:13:47:857 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:14:04:039 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:14:27:013 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+13:14:30:942 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+13:14:30:978 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+13:14:33:317 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+13:14:33:412 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+13:14:33:451 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+17:24:47:835 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+17:24:51:645 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+17:24:51:673 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+17:24:55:306 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+17:24:55:339 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+17:24:55:360 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+21:02:47:044 [main] INFO  testCases.TC001_searchText - ******** Starting TC_001_searchText ********
+21:02:50:744 [main] INFO  testCases.TC001_searchText - ******** verify if search Text box is displayed on home page ********
+21:02:50:784 [main] INFO  testCases.TC001_searchText - ****** Enter text to search and click on search button ******** 
+21:02:54:456 [main] INFO  testCases.TC001_searchText - ****** verify you are searchResult page ******** 
+21:02:54:502 [main] INFO  testCases.TC001_searchText - ****** Verify if first search result is exact match of entered text******** 
+21:02:54:525 [main] INFO  testCases.TC001_searchText - ******** Finished TC_001_searchText ********
+21:03:00:504 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:03:00:504 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:03:03:782 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:05:06:988 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:05:06:990 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:05:10:225 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:05:10:247 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:06:02:303 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:06:02:306 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:06:05:704 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:06:05:740 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:07:58:551 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:07:58:556 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:08:01:878 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:08:01:898 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:08:38:501 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:08:38:504 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:08:41:843 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:08:41:874 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:10:24:904 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:10:24:909 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:10:27:786 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:10:27:826 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:11:50:273 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:11:50:276 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:11:53:290 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:11:53:333 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:12:27:632 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:12:27:636 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:12:30:773 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:12:30:806 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:13:42:775 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:13:42:783 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:13:46:249 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:13:46:268 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:27:06:838 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:27:06:842 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:27:10:244 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:27:10:283 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+21:27:10:707 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:28:12:211 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:28:12:214 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:28:15:286 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:28:15:309 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+21:28:18:489 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
+21:29:26:265 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Starting TC_002_verifyCenter********
+21:29:26:269 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** clicking on find center button********
+21:29:29:439 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** Verify that newly open page contains /child-care-locator as a part of its URL ********
+21:29:29:465 [main] INFO  testCases.TC002_verifyNumberOfCenters - *****Type New York into search box and press Enter ****
+21:29:55:603 [main] INFO  testCases.TC002_verifyNumberOfCenters - ******** verify if a number of found centers is the same as a number of centers displayed on the below list ********
