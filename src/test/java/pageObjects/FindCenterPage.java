@@ -80,13 +80,11 @@ public class FindCenterPage extends BasePage
 			
 	        actions.sendKeys(findCenterSearchBox, Keys.ARROW_DOWN).perform();    
 	        
-	     
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.elementToBeClickable(findCenterSearchBox));
 			
 	        actions.sendKeys(findCenterSearchBox, Keys.RETURN).perform();
-	        
-	    
+	        	       
 	        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait1.until(ExpectedConditions.elementToBeClickable(findCenterSearchBox));
 				
