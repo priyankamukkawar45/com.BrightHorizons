@@ -2,6 +2,8 @@ package testCases;
 
 import static org.testng.Assert.assertTrue;
 
+import java.time.Duration;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -14,7 +16,7 @@ import testBase.BaseClass;
 public class TC002_verifyNumberOfCenters extends BaseClass 
 {
 
-	@Test(groups={"Sanity","Master"})
+	@Test
 	
 	public void verify_center()
 	{
@@ -23,6 +25,7 @@ public class TC002_verifyNumberOfCenters extends BaseClass
 		
 		try
 		{
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			logger.info("******** clicking on find center button********");
 			
 			HomePage hp = new HomePage(driver);
@@ -48,14 +51,19 @@ public class TC002_verifyNumberOfCenters extends BaseClass
 			
 			logger.info("*****Type New York into search box and press Enter ****");
 			
-			fc.findCenter("New York");
+			fc.searchForCenter("New York");
 			
 						
 			logger.info("******** verify if a number of found centers is the same as a number of centers displayed on the below list ********");
 			
-			Assert.assertEquals(fc.getNoOfCentersCountFromText(),fc.getNoOfCentersFromResultList(),"num same");
-			//Assert.assertEquals(fc.getNoOfCentersCountFromText(),fc.getNoOfCentersFromResultList(),"Centers count in Result list and number of centers displayed are same");
-			
+			if(fc.verifyNoOfCenters()== true)
+			{
+				Assert.assertTrue(true);
+			}
+			else
+			{	logger.error("No of centers does not match....");
+				Assert.assertTrue(false);
+			}
 			
 			logger.info("******** Click on the first center on the list ********");
 			
@@ -64,9 +72,15 @@ public class TC002_verifyNumberOfCenters extends BaseClass
 			
 			logger.info("******** Verify if center name and address are the same on the list and on the popup ********");
 			
-			Assert.assertEquals(fc.getCenterNameFromList(), fc.getCenterNameFromPopUp(),"Center name from result list and pop up is same");
-			Assert.assertEquals(fc.getCenterAdressFromList(), fc.getCenterAddressFromPopUp(),"Center address from result list and pop up is same");
-			
+			if(fc.verifyCenterNameAndAddress()== true)
+			{
+				Assert.assertTrue(true, "Centrer name and address matches");
+			}
+			else
+			{
+				Assert.assertTrue(false, "Centrer name and address does not matches");
+			}
+						
 			
 			logger.info("******** completed TC_002_verifyCenter********");
 		}

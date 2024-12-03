@@ -3,16 +3,20 @@ package pageObjects;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FindCenterPage extends BasePage
 {
-	
+		
 	public FindCenterPage(WebDriver driver)
 	{
 		super(driver);
@@ -41,8 +45,11 @@ public class FindCenterPage extends BasePage
 	
 	@FindBy(xpath = "//*[@id='1489']/div[1]/div[1]")
 	WebElement centerAddressFromPopUp;
+	
+	@FindBy(xpath="//div[@class='mapTooltip']")
+	WebElement mapToolTip;
 
-		
+	
 	
 	public String currentUrl = driver.getCurrentUrl();
 	
@@ -54,43 +61,66 @@ public class FindCenterPage extends BasePage
 		return urlCon;
 	}
 	
-	public void findCenter(String centerName) 
-	{
-		findCenterSearchBox.sendKeys(centerName);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6000));
-		findCenterSearchBox.sendKeys(Keys.ENTER);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6000));
-	}
+	public static void waitForAjaxComplete(WebDriver driver) {
+        String pageLoadStatus = null;
+        do {
+         
+        	JavascriptExecutor js = (JavascriptExecutor) driver;
+            pageLoadStatus = (String) js.executeScript("return document.readyState");
+        } while (!pageLoadStatus.equals("complete"));
+    }
 	
-	public int getNoOfCentersCountFromText()
+	public void searchForCenter(String centerName) throws InterruptedException 
 	{
+			waitForAjaxComplete(driver);
 			
-		return Integer.parseInt(noOfCentersText.getText());
-		 
+			findCenterSearchBox.sendKeys(centerName);
+						
+			Actions actions = new Actions(driver);
+			
+	        actions.sendKeys(findCenterSearchBox, Keys.ARROW_DOWN).perform();    
+	        
+	     
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.elementToBeClickable(findCenterSearchBox));
+			
+	        actions.sendKeys(findCenterSearchBox, Keys.RETURN).perform();
+	        
+	    
+	        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait1.until(ExpectedConditions.elementToBeClickable(findCenterSearchBox));
+				
+	        actions.sendKeys(findCenterSearchBox,Keys.CLEAR).perform();
+	        
+	        actions.sendKeys(findCenterSearchBox, Keys.RETURN).perform();
+	               
+	}
+	
+	
+		
+	public WebElement findFirstCenter()
+	{
+		
+		return centerResultTable.get(0);
 		
 	}
 	
-	public int getNoOfCentersFromResultList()
+	public void getFirstResultFromListOfCenters() throws InterruptedException
 	{
-		int centerNum = centerResultList.size();
-		System.out.println(centerNum-1);
-		return(centerNum-1);
-		
-	}
-		
-	
-	public void getFirstResultFromListOfCenters()
-	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(centerResultTable.get(0)));
 		centerResultTable.get(0).click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 	}
 	
 	
 
 	public String getCenterAdressFromList()
 	{
-		System.out.println(centerAddressFromList.getText().trim());
-		return centerAddressFromList.getText().trim();
+		String centerAddressXPath = "//span[@class='centerResult__address']";
+		String firstCenterAddressFromList = findFirstCenter().findElement(By.xpath(centerAddressXPath)).getText().trim();
+		return firstCenterAddressFromList;
+	
 	}
 	
 	
@@ -102,17 +132,58 @@ public class FindCenterPage extends BasePage
 	
 	public String getCenterNameFromList()
 	{
-		System.out.println(centerNameFromList.getText().trim());
-		return centerNameFromList.getText().trim();
+		String centerNameXPath = "//h3[@class='centerResult__name']";
+		String firstCenterNameFromList = findFirstCenter().findElement(By.xpath(centerNameXPath)).getText().trim();
+		return firstCenterNameFromList;
+		
 	}
 	
 	public String getCenterNameFromPopUp()
 	{
-		System.out.println(centerNameFromPopUp.getText().trim());
 		return centerNameFromPopUp.getText().trim();
 	
 	}
 	
+	public boolean verifyNoOfCenters()
+	{
+		int noOfCenterFromText = Integer.parseInt(noOfCentersText.getText());
+		int noOfCentersFromResultList = centerResultList.size()-1;
+		
+		if(noOfCenterFromText == noOfCentersFromResultList)
+		{
+			System.out.println("No of centers match");
+			return true;
+		}
+		
+		else
+			
+		{
+			System.out.println("No of centers does not match");
+			return false;
+		}
+	}
+	
+	
+	public boolean verifyCenterNameAndAddress()
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(mapToolTip));
+		wait.until(ExpectedConditions.visibilityOf(centerNameFromPopUp));
+		wait.until(ExpectedConditions.visibilityOf(centerAddressFromPopUp));
+	
+		if(getCenterAdressFromList().equals(getCenterAddressFromPopUp())
+			&& getCenterNameFromList().equals(getCenterNameFromPopUp()))
+		{
+			System.out.println("Name and address matches");
+			return true;
+		}
+		else
+		{
+			System.out.println("Name and address does not match");
+			return false;
+		}
+	}
+
 	
 	
 }

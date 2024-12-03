@@ -55,7 +55,7 @@ public WebDriverWait wait;
 		}	
 		
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 		driver.get(prop.getProperty("URL")); //reading URL from properties file
 		driver.manage().window().maximize();
 		

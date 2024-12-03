@@ -19,7 +19,7 @@ public class TC001_searchText extends BaseClass
 {
 	
 	
-	@Test(groups="Sanity")
+	@Test
 	public void verify_search_result() throws InterruptedException
 	{
 		logger.info("******** Starting TC_001_searchText ********");
@@ -29,10 +29,9 @@ public class TC001_searchText extends BaseClass
 			HomePage hp = new HomePage(driver);
 			hp.acceptCookie();
 			hp.clickOnSearchIcon();
-			Thread.sleep(3000);
 			
 			logger.info("******** verify if search Text box is displayed on home page ********");
-			Assert.assertEquals(hp.verifySearchField(), true,"Text box is not displayed");
+			Assert.assertEquals(hp.verifySearchField(), true," Text box is not displayed ");
 			
 			
 			logger.info("****** Enter text to search and click on search button ******** ");

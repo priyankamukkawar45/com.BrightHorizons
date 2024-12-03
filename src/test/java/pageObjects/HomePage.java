@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage{
 	
-	
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
@@ -47,26 +46,23 @@ public class HomePage extends BasePage{
 	
 	public void clickOnSearchIcon()
 	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(searchIcon));
 		searchIcon.click();
 	}
 	
 	
 	public boolean verifySearchField()
 	{
-		try 
-		{
-			return( searchTextBox.get(1).isDisplayed());
-		}
-		catch(Exception e)
-		{
-			return false;
-		}
-		
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(searchTextBox.get(1)));
+			return (searchTextBox.get(1).isDisplayed());
 	}
 	
 	
 	public void setSearchText(String textToSearch)
 	{
+		
 		searchTextBox.get(1).sendKeys(textToSearch);
 		
 	}
